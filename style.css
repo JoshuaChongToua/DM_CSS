@@ -1,0 +1,548 @@
+body {
+    width: 100%; /* Définit la largeur à 100% de l'écran */
+    font-family: Arial, sans-serif; /* Utilise la police Arial ou une police sans-serif en fallback */
+    background-color: #f9f9f9; /* Définit une couleur de fond gris clair */
+    margin: 0; /* Supprime les marges par défaut du body */
+    padding: 0; /* Supprime le padding par défaut du body */
+    color: #333; /* Définit la couleur du texte en gris foncé */
+    line-height: 1.6; /* Améliore la lisibilité du texte en augmentant l'espacement entre les lignes */
+}
+
+
+/* Container */
+.container {
+    width: 100%; /* La largeur du conteneur occupe 100% de l'espace disponible */
+    margin: 0 auto; /* Centre le conteneur horizontalement (utile si une largeur fixe est définie) */
+    /*padding: 1%;*/ /* Commenté, utilisé pour ajouter du padding interne si nécessaire */
+    background-color: white; /* Fond blanc pour le conteneur */
+    box-shadow: 0 0 10px rgba(0,0,0,0.1); /* Ajoute une ombre légère autour du conteneur pour un effet d'élévation */
+}
+
+
+.main-content {
+    padding: 20px; /* Ajoute un espace interne de 20px pour tout le contenu */
+    background-color: #ffffff; /* Assure que l'arrière-plan du contenu reste blanc */
+}
+
+
+header {
+    display: flex; /* Utilise Flexbox pour organiser les éléments du header */
+    justify-content: space-between; /* Espace les éléments du header uniformément */
+    align-items: center; /* Aligne les éléments verticalement au centre */
+    background-color: #ffffff; /* Fond blanc pour le header */
+    flex-wrap: wrap; /* Permet aux éléments du header de se placer sur plusieurs lignes si l'espace manque */
+}
+
+header img {
+    width: 100%; /* L'image occupe 100% de son conteneur */
+}
+
+
+#recherche_conteneur {
+    display: flex; /* Utilise Flexbox pour organiser les éléments de la recherche */
+    align-items: center; /* Centre les éléments verticalement */
+    justify-content: flex-end; /* Aligne les éléments à droite */
+}
+
+#rechercheInput {
+    border: 1px solid #ccc; /* Ajoute une bordure grise claire autour de l'input */
+    border-radius: 4px; /* Arrondit légèrement les coins de l'input */
+    font-size: 0.9em; /* Ajuste la taille de la police à 90% de la taille normale */
+    padding: 7px; /* Ajoute un padding interne de 7px pour plus de confort */
+    flex-grow: 1; /* Permet à l'input de prendre tout l'espace disponible */
+}
+
+#ok_recherche {
+    padding: 7px 11px; /* Ajoute un padding interne vertical de 7px et horizontal de 11px */
+    background-color: #007acb; /* Définit la couleur de fond en bleu */
+    color: white; /* Texte en blanc */
+    border: 1px solid #005f9e; /* Ajoute une bordure bleue foncée */
+    cursor: pointer; /* Change le curseur en forme de main au survol */
+    border-radius: 4px; /* Arrondit légèrement les coins du bouton */
+    font-size: 0.9em; /* Taille du texte plus petite pour meilleure lisibilité */
+}
+
+#ok_recherche:hover {
+    background-color: #005f9e; /* Change la couleur de fond du bouton en bleu plus foncé au survol */
+}
+
+
+nav {
+    background-color: #004080; /* Fond bleu foncé pour la barre de navigation */
+    margin-top: 20px; /* Ajoute une marge en haut pour espacer le contenu */
+}
+
+nav ul {
+    padding: 0; /* Supprime les padding par défaut de la liste */
+    margin: 0; /* Supprime les marges par défaut de la liste */
+    display: flex; /* Utilise Flexbox pour organiser les éléments du menu */
+    justify-content: space-between; /* Espace les éléments de manière uniforme */
+    flex-wrap: wrap; /* Permet de passer les éléments à la ligne si l'espace manque */
+}
+
+nav ul li {
+    position: relative; /* Nécessaire pour positionner le sous-menu */
+    flex: 1; /* Chaque élément prend une part égale de la largeur disponible */
+    text-align: center; /* Centre le texte de chaque élément de navigation */
+}
+
+nav ul li a {
+    display: block; /* Le lien occupe tout l'espace de l'élément parent */
+    padding: 15px 0; /* Ajoute un padding vertical de 15px */
+    color: rgb(52, 127, 196); /* Définit la couleur du texte en bleu clair */
+    background: radial-gradient(white, rgb(166, 166, 190)); /* Ajoute un dégradé radial pour le fond */
+    text-decoration: none; /* Supprime le soulignement des liens */
+    font-weight: bold; /* Rend le texte en gras */
+    transition: background-color 0.3s; /* Transition douce lors du changement de couleur de fond */
+}
+
+nav ul li:last-child a {
+    border-right: none; /* Supprime la bordure droite pour le dernier élément */
+}
+
+nav ul li:hover {
+    background-color: #0059b3; /* Change la couleur de fond au survol pour indiquer l'interactivité */
+}
+
+nav ul li ul {
+    display: none; /* Cache le sous-menu par défaut */
+    position: absolute; /* Positionne le sous-menu en dehors du flux normal */
+    top: 100%; /* Place le sous-menu juste en dessous de l'élément parent */
+    left: 0; /* Aligne le sous-menu à gauche */
+    background-color: #0059b3; /* Couleur de fond bleue pour le sous-menu */
+    padding: 0; /* Supprime le padding */
+    margin: 0; /* Supprime la marge */
+    z-index: 1; /* Place le sous-menu au-dessus des autres éléments */
+}
+
+nav ul li:hover ul {
+    display: block; /* Affiche le sous-menu lorsque l'élément parent est survolé */
+    width: 100%; /* Le sous-menu prend toute la largeur de l'élément parent */
+}
+
+nav ul li ul li a {
+    padding: 10px 20px; /* Ajoute un padding interne aux liens du sous-menu */
+    border-bottom: 1px solid #ccc; /* Ajoute une bordure de séparation entre les éléments du sous-menu */
+}
+
+nav ul li ul li a:hover {
+    background-color: #006bb3; /* Change la couleur de fond du lien du sous-menu au survol */
+}
+
+
+.accueil {
+    text-align: left;  /* Aligne le texte à gauche */
+    padding-left: 0;   /* Supprime le padding à gauche */
+    padding-top: 10px; /* Ajoute un padding en haut pour espacer */
+    margin-left: 0;    /* Supprime les marges à gauche */
+}
+
+.accueil li {
+    display: inline;   /* Affiche les éléments de la liste sur une seule ligne */
+    color: #006bb3; /* Texte en bleu clair */
+}
+
+.accueil li a {
+    text-align: left;  /* Aligne le lien à gauche */
+    color: #006bb3; /* Couleur du lien en bleu clair */
+}
+
+
+ul {
+    padding: 0; /* Supprime le padding par défaut de la liste */
+    margin: 20px 0; /* Ajoute une marge verticale de 20px */
+}
+
+ul li {
+    display: inline; /* Affiche les éléments de la liste sur une seule ligne */
+    font-size: 0.9em; /* Ajuste la taille de la police à 90% de la taille normale */
+}
+
+ul li a {
+    color: black; /* Définit la couleur du lien en noir */
+    text-decoration: none; /* Supprime le soulignement des liens */
+}
+
+ul li a:hover {
+    text-decoration: underline; /* Souligne le lien au survol */
+}
+
+
+section {
+    display: flex; /* Utilise Flexbox pour organiser les sections */
+    justify-content: space-between; /* Espace les sections de manière égale */
+    gap: 10px; /* Ajoute un espacement de 10px entre les sections */
+    flex-wrap: wrap; /* Permet aux sections de passer à la ligne si l'espace manque */
+}
+
+main {
+    flex: 2; /* Le contenu principal prend plus de place que l'aside */
+    background-color: white; /* Fond blanc pour visualiser l'espace */
+    border-radius: 8px; /* Coins arrondis */
+    overflow: hidden; /* Masque tout débordement */
+    flex-wrap: wrap; /* Permet aux éléments internes de passer à la ligne */
+}
+
+.decouvrez {
+    color: black; /* Définit la couleur du texte en noir */
+    text-align: center; /* Centre le texte horizontalement */
+}
+
+
+
+main h1 {
+    background-color: #004080; /* Définit un fond bleu foncé pour le titre */
+    color: white; /* Définit la couleur du texte en blanc */
+    padding: 10px; /* Ajoute un espacement interne de 8px autour du texte */
+    text-align: left; /* Aligne le texte à gauche */
+    font-size: 13px; /* Définit la taille de la police à 15px */
+    font-weight: bold; /* Rend le texte en gras */
+    border-radius: 10px 10px 0 0; /* Arrondit les coins supérieurs du titre */
+    margin-top: 0; /* Supprime la marge supérieure par défaut */
+}
+
+main div {
+    display: flex; /* Utilise Flexbox pour disposer les divs en ligne */
+    justify-content: space-between; /* Espace les divs uniformément */
+    margin-top: 20px; /* Ajoute une marge supérieure de 20px */
+    flex-wrap: wrap; /* Permet aux divs de passer à la ligne sur petits écrans */
+}
+
+main div div {
+    width: 32%; /* Chaque div occupe 32% de la largeur disponible */
+    background-color: #e7f3ff; /* Définit un fond bleu clair */
+    padding: 15px; /* Ajoute un espacement interne de 15px */
+    border: 1px solid #ccc; /* Ajoute une bordure grise claire */
+    text-align: center; /* Centre le texte à l'intérieur */
+    border-radius: 8px; /* Arrondit les coins de chaque bloc */
+    box-shadow: 0 0 5px rgba(0,0,0,0.1); /* Ajoute une ombre légère pour créer un effet de relief */
+}
+
+main .article {
+    background-color: #e7f3ff; /* Fond bleu clair pour l'article */
+    border-radius: 8px; /* Arrondit les coins de l'article */
+    box-shadow: 0 5px 1px rgba(226, 226, 226, 0.7); /* Ombre légère en bas pour effet de profondeur */
+    margin: 10px 0; /* Ajoute une marge verticale pour espacer l'article du reste */
+}
+
+main .article article {
+    text-align: left; /* Aligne le texte de l'article à gauche */
+    width: 32%; /* Largeur des articles à 32% */
+    padding: 7px; /* Ajoute un padding interne de 7px */
+}
+
+main .article article ul{
+   padding: 0;
+}
+
+main .article img {
+    margin-right: 10px; /* Ajoute un espacement de 10px à droite de l'image */
+}
+
+main .article article a {
+    text-decoration: none; /* Supprime le soulignement des liens */
+    color: rgb(52, 127, 196); /* Définit une couleur bleu clair pour les liens */
+    display: flex; /* Affiche les éléments du lien en flexbox pour les organiser en ligne */
+    align-items: center; /* Aligne les éléments du lien verticalement au centre */
+    font-size: 13px; /* Définit la taille de la police du lien à 13px */
+}
+
+main div div img {
+    margin-bottom: 10px; /* Ajoute un espacement de 10px en dessous de l'image */
+}
+
+main div div a {
+    text-decoration: none; /* Supprime le soulignement des liens */
+    color: #004080; /* Définit la couleur du lien en bleu foncé */
+    font-weight: bold; /* Rend le texte du lien en gras */
+    display: block; /* Fait en sorte que le lien occupe tout l'espace horizontal disponible */
+    margin-bottom: 10px; /* Ajoute un espacement de 10px en bas du lien */
+}
+
+main div div ul {
+    padding: 0; /* Supprime le padding par défaut de la liste */
+    text-align: left; /* Aligne le texte des listes à gauche */
+    font-size: 0.9em; /* Réduit la taille de la police à 90% de la taille normale */
+}
+
+main .article article ul li {
+    margin-bottom: 5px; /* Ajoute un espacement de 5px en bas de chaque élément de la liste */
+    font-size: 11px; /* Réduit la taille de la police à 11px pour les éléments de liste */
+}
+
+
+aside {
+    width: 25%; /* Définit la largeur de la section aside à 25% de l'espace disponible */
+}
+
+aside h3 {
+    background-color: #004080; /* Fond bleu foncé pour les titres dans le aside */
+    color: white; /* Texte en blanc */
+    padding: 10px; /* Espacement interne de 10px autour du texte */
+    font-size: 1.2em; /* Taille de police légèrement agrandie pour le titre */
+    margin: 0; /* Supprime la marge externe par défaut */
+    border-radius: 8px; /* Arrondit les coins du titre */
+}
+
+aside ul {
+    padding: 0; /* Supprime le padding par défaut autour de la liste */
+    margin: 0; /* Supprime la marge par défaut autour de la liste */
+}
+
+aside ul li {
+    margin: 10px 0; /* Ajoute une marge verticale de 10px entre les éléments de la liste */
+}
+
+aside ul li a {
+    text-decoration: none; /* Supprime le soulignement des liens */
+    color: #007acb; /* Définit une couleur bleu clair pour les liens */
+    font-size: 0.9em; /* Taille de police légèrement réduite pour les liens */
+}
+
+aside ul li a:hover {
+    text-decoration: underline; /* Souligne le lien lorsque l'utilisateur passe la souris dessus */
+}
+
+aside ul li .date {
+    color: #333; /* Texte gris foncé pour la date */
+    font-weight: bold; /* Met le texte de la date en gras */
+    margin-right: 5px; /* Ajoute un espacement de 5px à droite de la date */
+}
+
+.contenu {
+    display: flex; /* Utilise Flexbox pour disposer les éléments */
+    flex-direction: column; /* Empile les blocs verticalement */
+    gap: 20px; /* Ajoute un espacement de 20px entre les blocs */
+}
+
+.astuces, .actualites {
+    background-color: #e7f3ff; /* Fond bleu clair pour les sections astuces et actualités */
+    border-radius: 8px; /* Arrondit les coins des sections */
+    box-shadow: 0 5px 1px rgba(226, 226, 226, 0.7); /* Ombre légère pour donner de la profondeur */
+}
+
+.actualites h3 {
+    background-color: #c73606; /* Fond rouge pour le titre des actualités */
+    color: white; /* Texte en blanc */
+    font-size: 13px; /* Taille de police à 13px */
+    padding: 10x; /* Espacement interne de 10px */
+    margin: 0; /* Supprime la marge externe par défaut */
+    border-radius: 10px 10px 0 0; /* Arrondit les coins supérieurs */
+    width: 100%; /* Le titre prend toute la largeur disponible */
+    box-sizing: border-box; /* Inclut le padding dans la largeur totale */
+}
+
+.actualites ul {
+    margin-top: 15px; /* Ajoute une marge de 15px au-dessus de la liste */
+    padding: 3%; /* Ajoute un padding interne de 3% */
+}
+
+.actualites ul li {
+    text-align: left; /* Aligne le texte à gauche */
+}
+
+.actualites ul li a {
+    font-size: 11px; /* Taille de police réduite pour les liens */
+    padding: 5px 0; /* Ajoute un espacement vertical de 5px */
+    text-decoration: none; /* Supprime le soulignement des liens */
+    color: black; /* Couleur noire pour les liens */
+}
+
+.actualites ul li a .date {
+    color: #c73606; /* Couleur rouge pour les dates */
+}
+
+.actualites ul li a:hover {
+    text-decoration: underline; /* Souligne les liens au survol */
+}
+
+.actualites div a {
+    color: #c73606; /* Couleur rouge pour le texte */
+    font-size: 12px; /* Taille de police à 12px */
+    font-weight: bold; /* Texte en gras */
+    text-decoration: none; /* Supprime le soulignement des liens */
+    display: block; /* Le lien prend toute la largeur disponible */
+    text-align: right; /* Aligne le texte à droite */
+    padding-right: 5px; /* Ajoute un padding à droite de 5px */
+    padding-bottom: 5px; /* Ajoute un padding en bas de 5px */
+}
+
+.astuces h3 {
+    background-color: #004080; /* Fond bleu foncé pour le titre des astuces */
+    color: white; /* Texte en blanc */
+    font-size: 13px; /* Taille de police à 13px */
+    padding: 10px; /* Espacement interne de 10px */
+    margin: 0; /* Supprime la marge externe par défaut */
+    border-radius: 10px 10px 0 0; /* Arrondit les coins supérieurs */
+    width: 100%; /* Le titre prend toute la largeur disponible */
+    box-sizing: border-box; /* Inclut le padding dans la largeur totale */
+}
+
+.astuces ul {
+    margin-top: 15px; /* Ajoute une marge de 15px au-dessus de la liste */
+    padding: 3%; /* Ajoute un padding interne de 3% */
+}
+
+.astuces ul li {
+    text-align: left; /* Aligne le texte à gauche */
+}
+
+.astuces ul li a {
+    font-size: 11px; /* Taille de police réduite pour les liens */
+    padding: 5px 0; /* Ajoute un espacement vertical de 5px */
+    text-decoration: none; /* Supprime le soulignement des liens */
+    color: black; /* Couleur noire pour les liens */
+}
+
+.astuces ul li a:hover {
+    text-decoration: underline; /* Souligne les liens au survol */
+}
+
+.astuces div a {
+    color: #004080; /* Couleur bleu foncé pour le texte */
+    font-size: 12px; /* Taille de police à 12px */
+    font-weight: bold; /* Texte en gras */
+    text-decoration: none; /* Supprime le soulignement des liens */
+    display: block; /* Le lien prend toute la largeur disponible */
+    text-align: right; /* Aligne le texte à droite */
+    padding-right: 5px; /* Ajoute un padding à droite de 5px */
+    padding-bottom: 5px; /* Ajoute un padding en bas de 5px */
+}
+
+footer {
+    padding: 20px; /* Ajoute un espacement interne de 20px dans le footer */
+}
+
+footer .container  {
+    width: 100%; /* Prend toute la largeur disponible */
+    background-color: #478fd7; /* Fond bleu moyen */
+    color: white; /* Texte en blanc */
+    font-size: 0.8em; /* Réduit la taille de la police à 80% */
+    text-align: left; /* Aligne le texte à gauche */
+    border-bottom-left-radius: 10px; /* Arrondit le coin inférieur gauche */
+    border-bottom-right-radius: 10px; /* Arrondit le coin inférieur droit */
+}
+
+footer .row {
+    padding: 20px; /* Ajoute un espacement interne de 20px à chaque ligne */
+}
+
+footer div div div h5 {
+    font-size: 13px; /* Définit la taille de la police à 13px pour les titres dans le footer */
+}
+
+footer div div div ul li a {
+    color: white; /* Définit la couleur du texte des liens en blanc */
+}
+
+.list-group li {
+	display: list-item; /* Assure que les éléments de liste conservent leur comportement par défaut */
+	margin-bottom: 3px; /* Ajoute un espacement de 3px entre les éléments de la liste */
+}
+
+footer .droit {
+	background-color: #004080; /* Fond bleu foncé */
+	padding: 15px 0; /* Ajoute un espacement vertical de 15px */
+    border-bottom-left-radius: 10px; /* Arrondit le coin inférieur gauche */
+    border-bottom-right-radius: 10px; /* Arrondit le coin inférieur droit */
+}
+
+footer .droit p {
+	margin: 0; /* Supprime la marge externe par défaut */
+	color: white; /* Texte en blanc */
+}
+
+
+
+@media (max-width: 768px) {
+    header {
+        text-align: center; /* Centre le contenu du header */
+    }
+    header img {
+        width:100%; /* Réduit la taille du logo */
+    }
+
+    #recherche_conteneur {
+        justify-content: center;
+        margin-top: 10px;
+    }
+
+    nav ul {
+        flex-direction: column; /* Empile les éléments de navigation */
+    }
+
+    nav ul li {
+        width: 100%; /* Prend toute la largeur pour chaque élément */
+    }
+
+    section {
+        flex-direction: column; /* Empile les sections */
+    }
+
+    main {
+        width: 100%; /* Prend toute la largeur disponible */
+    }
+
+    main div div {
+        width: 100%; /* Les blocs prennent 100% de largeur */
+        margin-bottom: 15px; /* Ajoute de l'espace entre les blocs */
+    }
+
+    aside {
+        width: 100%; /* L'aside prend toute la largeur */
+        margin-top: 20px; /* Ajoute un espacement avec le main */
+    }
+
+    footer .row {
+        flex-direction: column; /* Empile les éléments du footer */
+        text-align: center;
+    }
+
+    footer .col-lg-1, footer .col-lg-2 {
+        text-align: center; /* Centre le contenu des colonnes */
+        margin-bottom: 15px; /* Espacement entre les éléments */
+    }
+}
+
+/* Pour les très petits écrans (max-width: 480px) */
+@media (max-width: 480px) {
+    header img {
+        width:100%; /* Réduit la taille du logo */
+    }
+
+    #recherche_conteneur {
+        justify-content: center;
+        margin-top: 10px;
+    }
+
+    main {
+        flex-direction: column; /* Empile les articles en une seule colonne */
+    }
+
+    main h1 {
+        font-size: 1.2em; /* Vous pouvez ajuster cela */
+        margin: 10px 0; /* Ajustez les marges si nécessaire */
+    }
+
+    .article {
+        padding: 0; /* Retirer tout padding qui pourrait provoquer le débordement */
+        margin: 10px 0; /* Ajuster les marges */
+        flex-direction: column;
+    }
+
+    main .article article {
+        width: 100%;
+
+    }
+
+    nav ul li a {
+        font-size: 0.9em; /* Réduit la taille du texte de navigation */
+    }
+
+    footer h5 {
+        font-size: 12px; /* Réduit la taille des titres du footer */
+    }
+}
+
+
+

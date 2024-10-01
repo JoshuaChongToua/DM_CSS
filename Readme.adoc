@@ -1,0 +1,166 @@
+= Compte-rendu SushiApp
+:toc:
+
+
+== Sommaire
+
+Réalisé par :
+
+- CHONG TOUA Joshua
+
+Date début : 06/10
+
+== Contexte
+
+Devoir maison, reconstruire une page html/css.
+
+== Introduction
+Pour démarrer le projet, j'ai séparé la page en plusieurs partie, le header, la navbar, les éléments qui seront au centre de la page, le aside puis le footer.
+
+
+== Header
+
+Le header est la premiere chose que j'ai modifié.
+Il contient l'image et la barre de recherche.
+
+Code HTML :
+
+image::imgReadMe/header/headerHtml.png[]
+
+Code CSS : 
+
+image::imgReadMe/header/headerCss.png[]
+
+- Utilisation de flex pour une disposition flexible et responsive.
+
+- Le justify-content: space-between permet de répartir les éléments, tandis que flex-wrap: wrap assure une bonne adaptation sur les petits écrans.
+
+- L'image est définie pour prendre 100% de largeur, ce qui garantit qu'elle s'adapte aux dimensions de son conteneur.
+
+- recherche_conteneur : Le conteneur de recherche est centré horizontalement à l'aide de flexbox. 
+
+
+Rendu :
+
+image::imgReadMe/header/headerRendu.png[]
+
+
+== NavBar
+
+La navbar contient quatre boite qui lors du survol affiche des elements.
+
+Code HTML :
+
+image::imgReadMe/navbar/navbarHtml.png[]
+
+Fichier CSS :
+
+image::imgReadMe/navbar/navbarCss.png[]
+
+- Utilisation de flex pour une disposition flexible et responsive.
+
+- Utilisation de flex-wrap pournl'adaptation sur les petit ecrans.
+
+Le sous-menu de chaque élément est en display:none et lors d'un survol avec 
+hover, le display devient display:bloc
+
+
+Rendu :
+
+image::imgReadMe/navbar/navbarRendu.png[]
+
+Sous-menu ouvert : 
+
+image::imgReadMe/navbar/navbarRenduOuvert.png[].png[]
+
+
+
+== Main
+
+Dans l'élément principal on y retrouve 3 articles à l'interieur.
+
+Code HTML :
+
+image::imgReadMe/main/mainHtml.png[]
+
+Code Css : 
+
+image::imgReadMe/main/mainCss.png[]
+
+- Utilisation de flex pour une disposition flexible et responsive.
+- Le flex: 2 permet à la section principale de prendre plus de place que l'aside. 
+- Utilisation du padding pour l'espace.
+- border-radius pour arrondir les bords.
+
+Rendu : 
+
+image::imgReadMe/main/mainRendu.png[]
+
+
+== Aside
+
+Dans l'aside on y retrouve 2 articles.
+
+Code Html : 
+
+image::imgReadMe/aside/asideHtml.png[]
+
+Code Css : 
+
+image::imgReadMe/aside/asideCss.png[]
+
+- Prend 25% de l'espace sur les grands écrans avec width: 25%.
+- Padding pour l'espace interieur.
+
+Rendu :
+
+image::imgReadMe/aside/asideRendu.png[]
+
+
+
+== Footer
+
+Le footer se situe en bas de la page.
+
+Il utilise la grille du framwork Bootstrap.
+
+Code HTML :
+
+
+image::imgReadMe/footer/footerHtml.png[]
+
+- Utilisation de col-lg-2 pour les grands écrans.
+- Utilisation de col-md-3 pour les écrans moyens.
+- Utilisation de mb-4 pour la marge sous l'élément.
+
+
+Code CSS :
+
+image::imgReadMe/footer/footerCss.png[]
+
+Rendu :
+
+image::imgReadMe/footer/footerRendu.png[]
+
+
+== Responsive sur petits ecrans
+
+Code CSS : 
+
+image::imgReadMe/responsive/tablette.png[]
+
+- Utilisation de @media (max-width: 768px) pour le format tablette.
+- Ajout de certains parametres sur les balises global pour adapter l'affichage sur les petits écrans
+
+Rendu :
+
+image::imgReadMe/responsive/rendu.png[]
+
+
+== Conclusion
+
+Pour conclure, ce projet m'a apporté de nouvelles connaisances en CSS.
+
+== Lien
+
+Lien github: https://github.com/JoshuaChongToua/SushiApp
