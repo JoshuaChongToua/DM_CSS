@@ -25,7 +25,7 @@ Il contient l'image et la barre de recherche.
 
 Code HTML :
 
-image::imgReadMe/header/headerHtml.PNG[]
+image::./imgReadMe/header/headerHtml.png[]
 
 Code CSS : 
 
