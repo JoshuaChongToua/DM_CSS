@@ -1,4 +1,4 @@
-= Compte-rendu SushiApp
+= Compte-rendu DM-CSS
 :toc:
 
 
@@ -25,11 +25,11 @@ Il contient l'image et la barre de recherche.
 
 Code HTML :
 
-image::imgReadMe/header/headerHtml.PNG[]
+image::/imgReadme/header/headerHtml.png[]
 
 Code CSS : 
 
-image::imgReadMe/header/headerCss.png[]
+image::imgReadme/header/headerCss.png[]
 
 - Utilisation de flex pour une disposition flexible et responsive.
 
@@ -42,7 +42,7 @@ image::imgReadMe/header/headerCss.png[]
 
 Rendu :
 
-image::imgReadMe/header/headerRendu.png[]
+image::imgReadme/header/headerRendu.png[]
 
 
 == NavBar
@@ -51,11 +51,11 @@ La navbar contient quatre boite qui lors du survol affiche des elements.
 
 Code HTML :
 
-image::imgReadMe/navbar/navbarHtml.png[]
+image::imgReadme/navbar/navbarHtml.png[]
 
 Fichier CSS :
 
-image::imgReadMe/navbar/navbarCss.png[]
+image::imgReadme/navbar/navbarCss.png[]
 
 - Utilisation de flex pour une disposition flexible et responsive.
 
@@ -67,11 +67,11 @@ hover, le display devient display:bloc
 
 Rendu :
 
-image::imgReadMe/navbar/navbarRendu.png[]
+image::imgReadme/navbar/navbarRendu.png[]
 
 Sous-menu ouvert : 
 
-image::imgReadMe/navbar/navbarRenduOuvert.png[].png[]
+image::imgReadme/navbar/navbarRenduOuvert.png[].png[]
 
 
 
@@ -81,11 +81,11 @@ Dans l'élément principal on y retrouve 3 articles à l'interieur.
 
 Code HTML :
 
-image::imgReadMe/main/mainHtml.png[]
+image::imgReadme/main/mainHtml.png[]
 
 Code Css : 
 
-image::imgReadMe/main/mainCss.png[]
+image::imgReadme/main/mainCss.png[]
 
 - Utilisation de flex pour une disposition flexible et responsive.
 - Le flex: 2 permet à la section principale de prendre plus de place que l'aside. 
@@ -94,7 +94,7 @@ image::imgReadMe/main/mainCss.png[]
 
 Rendu : 
 
-image::imgReadMe/main/mainRendu.png[]
+image::imgReadme/main/mainRendu.png[]
 
 
 == Aside
@@ -103,18 +103,18 @@ Dans l'aside on y retrouve 2 articles.
 
 Code Html : 
 
-image::imgReadMe/aside/asideHtml.png[]
+image::imgReadme/aside/asideHtml.png[]
 
 Code Css : 
 
-image::imgReadMe/aside/asideCss.png[]
+image::imgReadme/aside/asideCss.png[]
 
 - Prend 25% de l'espace sur les grands écrans avec width: 25%.
 - Padding pour l'espace interieur.
 
 Rendu :
 
-image::imgReadMe/aside/asideRendu.png[]
+image::imgReadme/aside/asideRendu.png[]
 
 
 
@@ -127,7 +127,7 @@ Il utilise la grille du framwork Bootstrap.
 Code HTML :
 
 
-image::imgReadMe/footer/footerHtml.png[]
+image::imgReadme/footer/footerHtml.png[]
 
 - Utilisation de col-lg-2 pour les grands écrans.
 - Utilisation de col-md-3 pour les écrans moyens.
@@ -136,25 +136,25 @@ image::imgReadMe/footer/footerHtml.png[]
 
 Code CSS :
 
-image::imgReadMe/footer/footerCss.png[]
+image::imgReadme/footer/footerCss.png[]
 
 Rendu :
 
-image::imgReadMe/footer/footerRendu.png[]
+image::imgReadme/footer/footerRendu.png[]
 
 
 == Responsive sur petits ecrans
 
 Code CSS : 
 
-image::imgReadMe/responsive/tablette.png[]
+image::imgReadme/responsive/tablette.png[]
 
 - Utilisation de @media (max-width: 768px) pour le format tablette.
 - Ajout de certains parametres sur les balises global pour adapter l'affichage sur les petits écrans
 
 Rendu :
 
-image::imgReadMe/responsive/rendu.png[]
+image::imgReadme/responsive/rendu.png[]
 
 
 == Conclusion
