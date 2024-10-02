@@ -67,7 +67,7 @@ hover, le display devient display:bloc
 
 Rendu :
 
-image::imgReadMe/navbar/navbarRendu.png[]
+image::imgReadme/navbar/navbarRendu.png[]
 
 Sous-menu ouvert : 
 
