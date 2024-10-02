@@ -25,11 +25,11 @@ Il contient l'image et la barre de recherche.
 
 Code HTML :
 
-image::/imgReadMe/header/headerHtml.png[]
+image::/imgReadme/header/headerHtml.png[]
 
 Code CSS : 
 
-image::imgReadMe/header/headerCss.png[]
+image::imgReadme/header/headerCss.png[]
 
 - Utilisation de flex pour une disposition flexible et responsive.
 
