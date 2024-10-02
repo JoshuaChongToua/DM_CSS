@@ -149,7 +149,7 @@ Code CSS :
 
 image::imgReadme/responsive/tablette.png[]
 
-- Utilisation de @media (max-width: 768px) pour le format tablette.
+- Utilisation de @media (max-width: 768px) et @media (max-width: 480px) pour le format tablette et telephone.
 - Ajout de certains parametres sur les balises global pour adapter l'affichage sur les petits écrans
 
 Rendu :
